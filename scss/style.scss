@@ -1,0 +1,492 @@
+@import 'utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+//
+//----Global Styles
+//
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $primary-font;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+    transition: $trans-1;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5 { font-family: $secondary-font; }
+
+//
+//----Header/Nav
+//
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 3em;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333333;
+    box-shadow: $shadow;
+
+    a:hover {
+        color: lighten($dark-color , 30%);
+    }
+
+    .nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+  
+    .nav-link {
+        color: inherit;
+        display: inline-block;
+        padding: 0 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        transition: $trans-1;
+
+        &:hover {
+            color: $secondary-color;
+            filter: drop-shadow(8px 8px 10px $dark-color);
+        }
+    }
+
+    .account {
+        a:hover {
+            color: #fff;
+        }
+
+        // Use this if margin isnt' on the btn class. might change.
+        // .btn:nth-child(1) {
+        //     margin-right: 0.5rem;
+        // }
+    }
+}
+
+.burger-icon {
+    display: none;
+}
+
+#burger {
+    display: none;
+}
+
+//
+//----Hero Section
+//
+.hero {
+    height: 75vh;
+    background: url('../img/hero.jpg') no-repeat center center/cover;
+    background-blend-mode: multiply;
+    box-shadow: $shadow;
+
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        height: 75vh;
+        padding: 0 3rem;
+        text-align: center;
+        margin-top: 3rem;
+
+        h1 {
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+//
+//----Home Sections
+//
+.home-container {
+    padding: 4.5rem 0 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+        font-family: $secondary-font;
+        letter-spacing: -1px;
+        text-align: center;
+        padding-bottom: 3rem;
+        line-height: 1;
+    }
+
+    p {
+        padding-bottom: 2rem;
+    }
+}
+
+//
+//----Home Sections: Plans
+//
+.plans {
+    &-features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+
+        .features {
+            margin: 1rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        i {
+            font-size: 3rem;
+            color: $secondary-color;
+            padding-right: 1rem;
+        }
+    }
+}
+
+//
+//----Home Sections: Testimonials
+//
+
+.testimonials {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+//
+//----Home Sections: About
+//
+
+//
+//----PAGE: Plans
+//
+.page-plans {
+    text-align: center;
+
+    h2 {
+        font-size: 3rem;
+        color: $light-color;
+    }
+
+    h3 {
+        color: $light-color;
+        font-size: 2rem;
+    }
+}
+
+.plan-compare {
+    margin-bottom: 6rem;
+
+    .plan-column {
+        opacity: 0.95;
+    }
+    
+}
+
+//
+//----PAGE: Contact
+//
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: $light-color;
+
+    p {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: none;
+        -webkit-appearance: none; /* Makes the box shadow work in iOS. Has to be before box-shadow  */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        font-family: inherit; 
+        font-size: inherit;
+        resize: none;
+    }
+
+    label {
+        margin: 0.8rem 0 0.5rem;
+        display: inline-block;
+        font-weight: 700;
+    }
+
+    .btn-submit {
+        margin: 1rem 0;
+        width: 100%;
+        height: 3rem;
+        display: inline-block;
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: $trans-1;
+      }
+    
+    .contact-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+
+        ul {
+            text-align: center;
+        }
+
+        h2 {
+            font-family: $secondary-font;
+        }
+
+        .fab {
+            font-size: 4rem;
+            margin: 1rem;
+            display: inline;
+            transition: $trans-1;
+
+            &:hover {
+                color: $light-color;
+                transition: $trans-1;
+                filter: $shadow-filter-sec;
+            }
+        }
+    }
+}
+
+//
+//----PAGE: Blog
+//
+
+//
+//----Footer
+//
+footer {
+    background: #464646;
+
+    a {
+        color: $light-color;
+    }
+
+    a:hover {
+        color: $secondary-color;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2rem 0;
+
+        .footer-divider {
+            width: 2px;
+            background: rgba($light-color, 0.05);
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: $secondary-font;
+            color: darken($light-color, 40%);
+        }
+
+        a {
+            font-size: 0.9rem;
+        }
+    }
+
+    .copyright {
+        background: rgb(58, 58, 58);
+        text-align: center;
+        width: 100%;
+        padding: 1rem 0;
+
+        a:hover {
+            color: #adadad;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: $light-color;
+            letter-spacing: -1px;
+        }
+
+        p {
+            font-size: 0.75rem;
+            color: #ccc;
+        }
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    header {
+        box-shadow: none;
+    }
+    .main-nav,
+     .account {
+         display: none;
+     }
+
+    .burger-icon {
+        display: block;
+    }
+
+    #burger {
+        display: none;
+        top: 79px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+
+        ul {
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        a {
+            color: $dark-color;
+            margin: 1rem 0;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .fa-bars {
+        font-size: 1.6rem;
+        color: $dark-color;
+     }
+
+     .fa-bars:hover {
+        color: $primary-color;
+        transition: $trans-1;
+     }
+
+     .hero {
+
+        &-container {
+            padding: 0;
+
+            h1 {
+                font-size: 2.5rem;
+                margin: 1.5rem 0;
+            }
+    
+            p {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+
+        .contact-right {
+            margin-top: 0;
+        }
+    }
+
+    .plans-features {
+        flex-direction: column;
+    }
+
+    .plan-compare {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        grid-gap: 1rem;
+        justify-items: center;
+        align-items: center;
+
+        .plan-column {
+            min-width: 300px;
+
+            &:first-child {
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+    
+            &:last-child {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+
+            .popular-text {
+                top: 1rem;
+            }
+        }
+
+        .popular {
+            margin: 1rem 0;
+            padding: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-container {
+
+        h1 {
+            font-size: 2.5rem;
+            padding-bottom: 3rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    footer .links {
+        flex-direction: column;
+
+        &-column {
+            text-align: center;
+            margin-bottom: 1rem;
+
+            &:nth-child(5) {
+               margin-bottom: 0;
+           }
+        }
+    }
+}

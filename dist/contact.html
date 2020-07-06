@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e303507efc.js" crossorigin="anonymous"></script>
+    <title>HostingSite - Contact Us</title>
+</head>
+<body>
+
+    <!-- Nav -->
+    <header>
+        <a href="index.html" class="logo" aria-label="homepage"><i class="fas fa-server"></i> BCHosting</a>
+
+        <!-- Hamburger menu -->
+        <div class="burger-icon">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="burger">
+            <ul>
+                <li class="nav-list-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="plans.html" class="nav-link">Plans</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Hambuger menu END -->
+        
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="plans.html" class="nav-link">Plans</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="account">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="btn btn-outline-dark" href="#">Login</a>
+            </li>
+            <li class="nav-list-item">
+                <a class="btn btn-primary" href="#">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- Page: Contact -->
+    <section class="plans">
+        <div class="page-container">
+            <div class="container">
+                <h1 class="page-header">Contact Us</h1>
+
+                <div class="contact-container">
+                    <div class="contact-right">
+                        <h2>Contact details</h2>
+                        <ul>
+                            <li>+1-800-555-5555</li>
+                            <li>info@bchosting.ca</li>
+                            <li>BCHosting LLC</li>
+                            <li>1345 Granville St, Vancouver</li>
+                            <li>BC, Canada, V5J 1K5</li>
+                        </ul>
+                        <p>
+                        Feel free to email us with any general inquiries, concerns or comments. If you're in need of support please use our <a href="#">Client Area</a> and fill out a support ticket.
+                        </p>
+                        <p>You can aslo reach us or see what we're up to on our social media channels.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </div>
+                    </div>
+
+                    <form method="post" id="reused_form" >
+                        <label for="name">Your Full Name</label>
+                        <input id="name" type="text" name="Name" required maxlength="50">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" name="Email" required maxlength="50">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+                        <button class="btn btn-submit btn-secondary" type="submit">Submit</button>
+                    </form>
+                    <div id="success_message" style="display:none">
+                        <h4>Submitted the form successfully!</h4> 
+                        <p>Click <a onClick="window.location.reload();">Here</a> to go back</p>
+                    </div>
+                    <div id="error_message" style="width:100%; height:100%; display: none; ">
+                        <h4>Error</h4>
+                        <p>Sorry there was an error sending your form.</p>
+                        <p>Click <a onClick="window.location.reload();">Here</a> to go back</p>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="links">
+            <div class="links-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Shared Hosting</a></li>
+                    <li><a href="#">Reseller Hosting</a></li>
+                    <li><a href="#">VPS Hosting</a></li>
+                    <li><a href="#">Dedicated Servers</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="links-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="links-column">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <a href="index.html" class="logo txt-light" aria-label="homepage"><i class="fas fa-server"></i> BCHosting</a>
+            <p>&copy; Copyright 2020 Sean Courtney</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
