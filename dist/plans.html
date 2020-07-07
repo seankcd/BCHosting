@@ -9,11 +9,11 @@
 </head>
 <body>
 
-    <!-- Nav -->
+    <!-- START Nav -->
     <header>
         <a href="index.html" class="logo" aria-label="homepage"><i class="fas fa-server"></i> BCHosting</a>
 
-        <!-- Hamburger menu -->
+        <!-- Hamburger menu Super messy and needs a rebuild-->
         <div class="burger-icon">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -30,9 +30,6 @@
                 <li class="nav-list-item">
                     <a href="contact.html" class="nav-link">Contact Us</a>
                 </li>
-                <li class="nav-list-item">
-                    <a href="blog.html" class="nav-link">Blog</a>
-                </li>
             </ul>
         </div>
         <!-- Hambuger menu END -->
@@ -48,22 +45,21 @@
             <li class="nav-list-item">
                 <a href="contact.html" class="nav-link">Contact Us</a>
             </li>
-            <li class="nav-list-item">
-                <a href="blog.html" class="nav-link">Blog</a>
-            </li>
           </ul>
         </nav>
         <nav class="account">
           <ul class="nav-list">
             <li class="nav-list-item">
-              <a class="btn btn-outline-dark" href="#">Login</a>
+              <a class="btn btn-outline-dark" href="login.html">Login</a>
             </li>
             <li class="nav-list-item">
-                <a class="btn btn-primary" href="#">Sign up</a>
+                <a class="btn btn-secondary" href="signup.html">Sign up</a>
             </li>
           </ul>
         </nav>
     </header>
+
+    <!-- END Nav -->
 
     <!-- Page: Plans -->
     <section class="page-plans">
@@ -73,6 +69,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus nostrum eveniet dolorum adipisci eos, facere, odit facilis obcaecati ut, et suscipit dolor delectus voluptas possimus impedit odio atque ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorem totam facere doloremque consectetur, id sit ipsum perspiciatis blanditiis esse?</p>
 
                 <!-- Shared Hosting -->
+                <div id="shared"></div>
                 <h2>Shared Hosting</h2>
 
                 <div class="plans-features">
@@ -220,6 +217,7 @@
                 <!-- End Shared Compare Plans -->
 
                  <!-- Reseller Hosting -->
+                 <div id="reseller"></div>
                  <h2>Reseller Hosting</h2>
 
                  <div class="plans-features">
@@ -370,44 +368,45 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="links">
-            <div class="links-column">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#">Shared Hosting</a></li>
-                    <li><a href="#">Reseller Hosting</a></li>
-                    <li><a href="#">VPS Hosting</a></li>
-                    <li><a href="#">Dedicated Servers</a></li>
-                </ul>
-            </div>
-            <div class="footer-divider"></div>
-            <div class="links-column">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer-divider"></div>
-            <div class="links-column">
-                <h4>Social Media</h4>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></li>
-                </ul>
-            </div>
+ <!-- Footer -->
+ <footer>
+    <div class="links">
+        <div class="links-column">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="plans.html#shared">Shared Hosting</a></li>
+                <li><a href="plans.html#reseller">Reseller Hosting</a></li>
+                <li><a href="plans.html">VPS Hosting</a></li>
+                <li><a href="plans.html">Dedicated Servers</a></li>
+            </ul>
         </div>
-
-        <div class="copyright">
-            <a href="index.html" class="logo txt-light" aria-label="homepage"><i class="fas fa-server"></i> BCHosting</a>
-            <p>&copy; Copyright 2020 Sean Courtney</p>
+        <div class="footer-divider"></div>
+        <div class="links-column">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-divider"></div>
+        <div class="links-column">
+            <h4>Social Media</h4>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+            </ul>
+        </div>
+    </div>
 
-    <script src="js/app.js"></script>
+
+    <div class="copyright">
+        <a href="index.html" class="logo text-light" aria-label="homepage"><i class="fas fa-server"></i> BCHosting</a>
+        <p>&copy; Copyright 2020 Sean Courtney</p>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 @import 'utilities';
-@import 'plan';
 @import 'mobile';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
@@ -91,6 +90,10 @@ header {
 
 .burger-icon {
     display: none;
+
+    i:hover {
+        color: $secondary-color;
+    }
 }
 
 #burger {
@@ -239,6 +242,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: $light-color;
+    margin-bottom: 3rem;
 
     p {
         text-align: center;
