@@ -140,15 +140,29 @@
 @media only screen and (max-width: 600px) {
     .home-container {
 
-        h1 {
+        .container h1 {
             font-size: 2.5rem;
             padding-bottom: 3rem;
         }
 
-        p {
+        .container p {
             font-size: 0.9rem;
         }
     }
+
+    .hero .hero-container {
+            padding: 0;
+
+            h1 {
+                font-size: 2.5rem;
+                margin: 1.5rem 0;
+            }
+    
+            p {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+        }
 
     footer .links {
         flex-direction: column;

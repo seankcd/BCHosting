@@ -24,8 +24,8 @@
 .container {
   max-width: var(--max-width);
   margin: auto;
-  padding: 0 3rem;
-  overflow: visible;
+  padding: 0 0.8rem;
+  overflow: hidden;
   /* Visible makes the butons work. Used to be/is supposed to be hidden */
 }
 
@@ -530,12 +530,23 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .home-container h1 {
+  .home-container .container h1 {
     font-size: 2.5rem;
     padding-bottom: 3rem;
   }
-  .home-container p {
+  .home-container .container p {
     font-size: 0.9rem;
+  }
+  .hero .hero-container {
+    padding: 0;
+  }
+  .hero .hero-container h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+  .hero .hero-container p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
   footer .links {
     flex-direction: column;
@@ -654,7 +665,7 @@ header .account a:hover {
 }
 
 .hero-container span {
-  color: #d3341f;
+  color: #007add;
 }
 
 .hero-container h1 {

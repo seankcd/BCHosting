@@ -44,8 +44,8 @@ $shadow-filter-sec: drop-shadow(2.5px 2.5px 8px $secondary-color);
 .container {
     max-width: var(--max-width);
     margin: auto;
-    padding: 0 3rem;
-    overflow: visible; /* Visible makes the butons work. Used to be/is supposed to be hidden */
+    padding: 0 0.8rem;
+    overflow: hidden; /* Visible makes the butons work. Used to be/is supposed to be hidden */
 }
 
 .bg-dark {
