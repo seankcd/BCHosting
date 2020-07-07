@@ -773,6 +773,10 @@ header .account a:hover {
   padding: 2rem;
 }
 
+.contact-container form {
+  margin: 0 3rem;
+}
+
 .contact-container input, .contact-container textarea {
   width: 100%;
   padding: 0.5rem;
