@@ -847,6 +847,10 @@ footer a {
   color: #EFEFF0;
 }
 
+footer .skc {
+  color: #007add;
+}
+
 footer a:hover {
   color: #007add;
 }
@@ -892,6 +896,6 @@ footer .copyright h1 {
 }
 
 footer .copyright p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #ccc;
 }
