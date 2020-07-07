@@ -646,7 +646,7 @@ header .account a:hover {
 }
 
 .hero {
-  height: 75vh;
+  height: 78vh;
   background: url("../img/hero.jpg") no-repeat center center/cover;
   background-blend-mode: multiply;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
