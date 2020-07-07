@@ -69,7 +69,11 @@
         }
     }
 
-    .contact-container {
+    //
+    //----PAGE: Contact
+    //
+
+    .contact .contact-container {
         grid-template-columns: 1fr;
 
         .contact-right {
@@ -160,6 +164,11 @@
         .container p {
             font-size: 0.9rem;
         }
+    }
+
+    .card-container .box::before,
+    .card-container .box::after {
+        display: none;
     }
 
     footer .links {

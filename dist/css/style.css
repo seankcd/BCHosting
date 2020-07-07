@@ -476,10 +476,10 @@
   .plans .home-container .plan-compare {
     margin-bottom: 0;
   }
-  .contact-container {
+  .contact .contact-container {
     grid-template-columns: 1fr;
   }
-  .contact-container .contact-right {
+  .contact .contact-container .contact-right {
     margin-top: 0;
   }
   .plans-features {
@@ -547,6 +547,10 @@
   }
   .home-container .container p {
     font-size: 0.9rem;
+  }
+  .card-container .box::before,
+  .card-container .box::after {
+    display: none;
   }
   footer .links {
     flex-direction: column;
