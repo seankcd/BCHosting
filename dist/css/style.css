@@ -680,7 +680,7 @@ header .account a:hover {
 }
 
 .home-container {
-  padding: 4.5rem 0 6rem;
+  padding: 4.5rem 1.5rem 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
