@@ -459,15 +459,15 @@
     color: #d3341f;
     transition: all 150ms ease-in;
   }
-  .hero-container {
+  .hero .hero-container {
     padding: 0;
   }
-  .hero-container h1 {
-    font-size: 2.5rem;
+  .hero .hero-container h1 {
+    font-size: 2.8rem;
     margin: 1.5rem 0;
   }
-  .hero-container p {
-    font-size: 0.9rem;
+  .hero .hero-container p {
+    font-size: 1.1rem;
     margin-bottom: 1rem;
   }
   .plans .home-container {
@@ -530,13 +530,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .home-container .container h1 {
-    font-size: 2.5rem;
-    padding-bottom: 3rem;
-  }
-  .home-container .container p {
-    font-size: 0.9rem;
-  }
   .hero .hero-container {
     padding: 0;
   }
@@ -547,6 +540,13 @@
   .hero .hero-container p {
     font-size: 0.9rem;
     margin-bottom: 1rem;
+  }
+  .home-container .container h1 {
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+  }
+  .home-container .container p {
+    font-size: 0.9rem;
   }
   footer .links {
     flex-direction: column;
@@ -598,7 +598,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2em 3em;
+  padding: 0.6em 3em;
   background: rgba(255, 255, 255, 0.95);
   color: #333333;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);

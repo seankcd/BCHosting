@@ -44,22 +44,19 @@
         transition: $trans-1;
      }
 
-     .hero {
+    .hero .hero-container {
+        padding: 0;
 
-        &-container {
-            padding: 0;
-
-            h1 {
-                font-size: 2.5rem;
-                margin: 1.5rem 0;
-            }
-    
-            p {
-                font-size: 0.9rem;
-                margin-bottom: 1rem;
-            }
-        }
+    h1 {
+        font-size: 2.8rem;
+        margin: 1.5rem 0;
     }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+}
 
     //
     //----Home Sections: Plans
@@ -138,6 +135,21 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .hero .hero-container {
+            padding: 0;
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 1.5rem 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+    }
+
     .home-container {
 
         .container h1 {
@@ -149,20 +161,6 @@
             font-size: 0.9rem;
         }
     }
-
-    .hero .hero-container {
-            padding: 0;
-
-            h1 {
-                font-size: 2.5rem;
-                margin: 1.5rem 0;
-            }
-    
-            p {
-                font-size: 0.9rem;
-                margin-bottom: 1rem;
-            }
-        }
 
     footer .links {
         flex-direction: column;
