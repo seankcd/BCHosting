@@ -1,4 +1,6 @@
 @import 'utilities';
+@import 'plan';
+@import 'mobile';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
@@ -155,28 +157,14 @@ header {
 //
 //----Home Sections: Plans
 //
-.plans {
-    &-features {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem 0;
+    .home-container {
+        padding-bottom: 6rem;
 
-        .features {
-            margin: 1rem;
-        }
-
-        h3 {
-            font-size: 2rem;
-        }
-
-        i {
-            font-size: 3rem;
-            color: $secondary-color;
-            padding-right: 1rem;
-        }
+    .plan-compare {
+        margin-bottom: 0;
     }
 }
+
 
 //
 //----Home Sections: Testimonials
@@ -202,13 +190,36 @@ header {
     text-align: center;
 
     h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: $light-color;
     }
 
     h3 {
         color: $light-color;
         font-size: 2rem;
+    }
+}
+
+.plans {
+    &-features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+
+        .plans-feature {
+            margin: 1rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        i {
+            font-size: 3rem;
+            color: $secondary-color;
+            padding-right: 1rem;
+        }
     }
 }
 
@@ -356,137 +367,3 @@ footer {
     }
 }
 
-@media only screen and (max-width: 888px) {
-    header {
-        box-shadow: none;
-    }
-    .main-nav,
-     .account {
-         display: none;
-     }
-
-    .burger-icon {
-        display: block;
-    }
-
-    #burger {
-        display: none;
-        top: 79px;
-        left: 0;
-        width: 100%;
-        position: absolute;
-        text-align: center;
-
-        ul {
-            background: rgba(255, 255, 255, 0.95);
-        }
-
-        a {
-            color: $dark-color;
-            margin: 1rem 0;
-            font-size: 1.5rem;
-
-            &:hover {
-                color: $primary-color;
-            }
-        }
-    }
-
-    .fa-bars {
-        font-size: 1.6rem;
-        color: $dark-color;
-     }
-
-     .fa-bars:hover {
-        color: $primary-color;
-        transition: $trans-1;
-     }
-
-     .hero {
-
-        &-container {
-            padding: 0;
-
-            h1 {
-                font-size: 2.5rem;
-                margin: 1.5rem 0;
-            }
-    
-            p {
-                font-size: 0.9rem;
-                margin-bottom: 1rem;
-            }
-        }
-    }
-
-    .contact-container {
-        grid-template-columns: 1fr;
-
-        .contact-right {
-            margin-top: 0;
-        }
-    }
-
-    .plans-features {
-        flex-direction: column;
-    }
-
-    .plan-compare {
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-        grid-gap: 1rem;
-        justify-items: center;
-        align-items: center;
-
-        .plan-column {
-            min-width: 300px;
-
-            &:first-child {
-                border-top-right-radius: 8px;
-                border-bottom-right-radius: 8px;
-            }
-    
-            &:last-child {
-                border-top-left-radius: 8px;
-                border-bottom-left-radius: 8px;
-            }
-
-            .popular-text {
-                top: 1rem;
-            }
-        }
-
-        .popular {
-            margin: 1rem 0;
-            padding: 1.5rem;
-        }
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .home-container {
-
-        h1 {
-            font-size: 2.5rem;
-            padding-bottom: 3rem;
-        }
-
-        p {
-            font-size: 0.9rem;
-        }
-    }
-
-    footer .links {
-        flex-direction: column;
-
-        &-column {
-            text-align: center;
-            margin-bottom: 1rem;
-
-            &:nth-child(5) {
-               margin-bottom: 0;
-           }
-        }
-    }
-}

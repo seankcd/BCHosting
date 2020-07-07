@@ -1,0 +1,165 @@
+@media only screen and (max-width: 888px) {
+    header {
+        box-shadow: none;
+
+        .burger-icon {
+            display: block;
+        }
+    }
+    .main-nav,
+     .account {
+        display: none;
+     }
+
+    #burger {
+        display: none;
+        top: 79px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+
+        ul {
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        a {
+            color: $dark-color;
+            margin: 1rem 0;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .fa-bars {
+        font-size: 1.6rem;
+        color: $dark-color;
+     }
+
+     .fa-bars:hover {
+        color: $primary-color;
+        transition: $trans-1;
+     }
+
+     .hero {
+
+        &-container {
+            padding: 0;
+
+            h1 {
+                font-size: 2.5rem;
+                margin: 1.5rem 0;
+            }
+    
+            p {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    //
+    //----Home Sections: Plans
+    //
+    .plans .home-container {
+        padding-bottom: 2rem;
+
+        .plan-compare {
+            margin-bottom: 0;
+        }
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+
+        .contact-right {
+            margin-top: 0;
+        }
+    }
+
+    //Compare Plans
+
+    .plans-features {
+        flex-direction: column;
+    }
+
+    .plan-compare {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .plan-column {
+            min-width: 300px;
+            margin: 0 1.5rem 3rem;
+
+            &:first-child {
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+    
+            &:last-child {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+
+            .popular-text {
+                top: 1rem;
+            }
+        }
+
+        .popular-text-box {
+            position: absolute;
+            top: -2rem; 
+            left: -5rem;
+
+            .popular-text {
+                width: 20px;
+                border-radius: 8px;
+                min-width: 6rem;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                font-weight: bold;
+                font-family: $secondary-font;
+                background: rgb(248, 203, 3);
+                color: $secondary-color;
+                filter: $shadow-filter;
+            }
+        }
+
+        .popular {
+            padding: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-container {
+
+        h1 {
+            font-size: 2.5rem;
+            padding-bottom: 3rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    footer .links {
+        flex-direction: column;
+
+        &-column {
+            text-align: center;
+            margin-bottom: 1rem;
+
+            &:nth-child(5) {
+               margin-bottom: 0;
+           }
+        }
+    }
+}
