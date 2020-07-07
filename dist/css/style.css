@@ -707,6 +707,10 @@ header .account a:hover {
   padding-bottom: 6rem;
 }
 
+.home-container .container {
+  overflow: visible;
+}
+
 .home-container .plan-compare {
   margin-bottom: 0;
 }
